@@ -9,6 +9,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  background-color: rgb(71, 69, 69);
 }
 #help{
     height: 30px;
@@ -40,6 +41,7 @@ main{
     border: solid 1px rgb(53, 50, 50);
     border-radius: 10px;
     position: relative;
+    background-color: rgb(155, 152, 152);
 }
 #person{
     top: 100px;
