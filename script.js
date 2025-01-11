@@ -40,10 +40,10 @@ let appx =100
 let appy =100
 let score = 0
 
-let resttime = 6
+let resttime = 5
 
 setInterval(()=>{
-    resttime=6
+    resttime=5
  
     apple.removeAttribute('hidden')
 let rdnx= Math.floor(Math.random() *10) + 0
@@ -55,7 +55,7 @@ apple.style.left = xcor + 'px'
 apple.style.top = ycor +'px'
 
 
-},6000)
+},5000)
 setInterval(()=>{
     resttime--
     score++
@@ -95,7 +95,7 @@ document.addEventListener('keyup',()=>{
   let personx =person.style.left
   if(appley == persony && applex == personx){
     apple.setAttribute('hidden',1)
-    resttime=6   
+    resttime=5   
   }
 })
 btnfront.addEventListener('click',()=>{
@@ -112,7 +112,7 @@ btnfront.addEventListener('click',()=>{
   let personx =person.style.left
   if(appley == persony && applex == personx){
     apple.setAttribute('hidden',1)
-    resttime=6   
+    resttime=5   
   }
 })
 btndown.addEventListener('click',()=>{
@@ -129,7 +129,7 @@ btndown.addEventListener('click',()=>{
   let personx =person.style.left
   if(appley == persony && applex == personx){
     apple.setAttribute('hidden',1)
-    resttime=6   
+    resttime=5   
   }
 })
 btnleft.addEventListener('click',()=>{
@@ -146,7 +146,7 @@ btnleft.addEventListener('click',()=>{
   let personx =person.style.left
   if(appley == persony && applex == personx){
     apple.setAttribute('hidden',1)
-    resttime=6   
+    resttime=5   
   }
     })
 btnright.addEventListener('click',()=>{
@@ -164,6 +164,6 @@ btnright.addEventListener('click',()=>{
      let personx =person.style.left
      if(appley == persony && applex == personx){
        apple.setAttribute('hidden',1)
-       resttime=6   
+       resttime=5   
      }
     })
