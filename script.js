@@ -95,15 +95,6 @@ document.addEventListener('keydown',(e)=>{
   if( e.key == 'd'){
     appx += 20
   }
-  let appley =apple.style.top 
-  let applex = apple.style.left  
-  let persony =person.style.top 
-  let personx =person.style.left
-  if(appley == persony && applex == personx){
-    
-    apple.setAttribute('hidden',1)
-    resttime=5   
-  }
   
   person.style.top= appy +'px'
   person.style.left= appx +'px'
@@ -114,7 +105,13 @@ document.addEventListener('keyup',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
-    
+    person.classList.add('rotateanim')
+   
+    setTimeout(()=>{
+     person.classList.remove('rotateanim')
+
+
+    },750)
 
     apple.setAttribute('hidden',1)
     resttime=5   
@@ -133,7 +130,13 @@ btnfront.addEventListener('click',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
-    
+    person.classList.add('rotateanim')
+
+    setTimeout(()=>{
+     person.classList.remove('rotateanim')
+
+
+    },750)
 
     apple.setAttribute('hidden',1)
     resttime=5   
@@ -152,7 +155,13 @@ btndown.addEventListener('click',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
-    
+    person.classList.add('rotateanim')
+
+    setTimeout(()=>{
+     person.classList.remove('rotateanim')
+
+
+    },750)
 
     apple.setAttribute('hidden',1)
     resttime=5   
@@ -171,7 +180,13 @@ btnleft.addEventListener('click',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
-    
+    person.classList.add('rotateanim')
+
+    setTimeout(()=>{
+     person.classList.remove('rotateanim')
+ 
+
+    },750)
 
     apple.setAttribute('hidden',1)
     resttime=5   
@@ -191,7 +206,13 @@ btnright.addEventListener('click',()=>{
      let persony =person.style.top 
      let personx =person.style.left
      if(appley == persony && applex == personx){
-    
+      person.classList.add('rotateanim')
+  
+    setTimeout(()=>{
+     person.classList.remove('rotateanim')
+
+
+    },750)
 
        apple.setAttribute('hidden',1)
        resttime=5   
