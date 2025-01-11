@@ -25,6 +25,10 @@ const applexy = {
 
     }
 }
+const help =document.getElementById('help')
+const closebtn = document.getElementById('close')
+const dialog = document.querySelector('dialog')
+
 const scoreparagraph = document.getElementById('score')
 const table = document.getElementById('table')
 const person =document.getElementById('person')
@@ -35,6 +39,13 @@ const btnleft = document.getElementById('left')
 const btnright = document.getElementById('right')
 const btndown = document.getElementById('down')
 
+help.addEventListener('click',()=>{
+   dialog.showModal()
+
+})
+closebtn.addEventListener('click',()=>{
+  dialog.close()
+})
 
 let appx =100
 let appy =100
@@ -84,6 +95,15 @@ document.addEventListener('keydown',(e)=>{
   if( e.key == 'd'){
     appx += 20
   }
+  let appley =apple.style.top 
+  let applex = apple.style.left  
+  let persony =person.style.top 
+  let personx =person.style.left
+  if(appley == persony && applex == personx){
+    
+    apple.setAttribute('hidden',1)
+    resttime=5   
+  }
   
   person.style.top= appy +'px'
   person.style.left= appx +'px'
@@ -94,6 +114,8 @@ document.addEventListener('keyup',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
+    
+
     apple.setAttribute('hidden',1)
     resttime=5   
   }
@@ -111,6 +133,8 @@ btnfront.addEventListener('click',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
+    
+
     apple.setAttribute('hidden',1)
     resttime=5   
   }
@@ -128,6 +152,8 @@ btndown.addEventListener('click',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
+    
+
     apple.setAttribute('hidden',1)
     resttime=5   
   }
@@ -145,6 +171,8 @@ btnleft.addEventListener('click',()=>{
   let persony =person.style.top 
   let personx =person.style.left
   if(appley == persony && applex == personx){
+    
+
     apple.setAttribute('hidden',1)
     resttime=5   
   }
@@ -163,6 +191,8 @@ btnright.addEventListener('click',()=>{
      let persony =person.style.top 
      let personx =person.style.left
      if(appley == persony && applex == personx){
+    
+
        apple.setAttribute('hidden',1)
        resttime=5   
      }

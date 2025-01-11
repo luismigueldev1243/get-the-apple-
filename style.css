@@ -10,7 +10,15 @@ body{
   font-weight: 700;
   font-style: normal;
 }
-button{
+#help{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(124, 121, 121);
+    margin-bottom: 100px;
+}
+#front,#down,#right,#left{
     height: 60px;
     width: 60px;
     border: solid gray 10px;
