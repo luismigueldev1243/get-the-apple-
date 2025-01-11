@@ -53,6 +53,8 @@ let score = 0
 
 let resttime = 5
 
+let scoresum = 1
+
 setInterval(()=>{
     resttime=5
  
@@ -69,11 +71,20 @@ apple.style.top = ycor +'px'
 },5000)
 setInterval(()=>{
     resttime--
-    score++
+    score+=scoresum
     scoreparagraph.innerHTML = 'SCORE: ' + score
     if(resttime<= 0){
         alert('you lost!')
         location.reload(true)
+    }
+    if(score>70){
+      scoresum =2
+    }
+    if(score > 200){
+      scoresum = 4
+    }
+    if( score >500){
+      scoresum= 10
     }
     console.log(resttime)
 },1000)
@@ -83,16 +94,16 @@ document.addEventListener('keydown',(e)=>{
        location.reload(true)
         alert("you died .")
     }
-  if( e.key == 'w'){
+  if( e.key == 'w' || e.key == 'W'){
     appy -= 20
   }
-  if( e.key == 's'){
+  if( e.key == 's' || e.key == 'S'){
     appy += 20
   }
-  if( e.key == 'a'){
+  if( e.key == 'a' || e.key == 'A' ){
    appx -= 20
   }
-  if( e.key == 'd'){
+  if( e.key == 'd' ||  e.key == 'D'){
     appx += 20
   }
   
